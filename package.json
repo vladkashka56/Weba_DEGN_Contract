@@ -1,0 +1,54 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "PFP Airdrop Contracts",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webaverse-studios/pfp-airdrop-contract.git"
+  },
+  "scripts": {
+    "deploy-mainnet": "truffle migrate --network mainnet",
+    "deploy-mainnet-reset": "truffle migrate --network mainnet --reset",
+    "deploy-goerli": "truffle migrate --network goerli",
+    "deploy-goerli-reset": "truffle migrate --network goerli --reset",
+    "deploy-polygon": "truffle migrate --network polygon",
+    "deploy-polygon-reset": "truffle migrate --network polygon --reset",
+    "deploy-verify-mainnet": "truffle run verify PFP --network mainnet",
+    "deploy-verify-polygon": "truffle run verify PFP --network polygon",
+    "deploy-verify-goerli": "truffle run verify PFP --network goerli"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webaverse-studios/pfp-airdrop-contract/issues"
+  },
+  "homepage": "https://github.com/webaverse-studios/pfp-airdrop-contract#readme",
+  "dependencies": {
+    "@a16z/contracts": "^0.0.8",
+    "@openzeppelin/contracts": "^4.7.0",
+    "@openzeppelin/contracts-upgradeable": "^4.7.0",
+    "@openzeppelin/truffle-upgrades": "^1.15.0",
+    "@truffle/hdwallet-provider": "^2.0.11",
+    "dotenv": "^16.0.1",
+    "erc721a": "^4.2.3",
+    "openzeppelin-contracts": "^4.0.0",
+    "solc": "0.8.15",
+    "truffle": "^5.5.22",
+    "truffle-plugin-verify": "^0.5.26",
+    "web3": "^1.7.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.7",
+    "hardhat-gas-reporter": "^1.0.9",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.3.9"
+  }
+}

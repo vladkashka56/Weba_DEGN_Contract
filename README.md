@@ -1,1 +1,1 @@
-# Weba_DEGN_Contract
+# pfp-airdrop-contract
